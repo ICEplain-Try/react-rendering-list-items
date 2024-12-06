@@ -1,0 +1,92 @@
+    :root {
+    --primary-color: #111;
+    --secondary-color: #333;
+    --background-color: #f9f9f9;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.App {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: var(--primary-color);
+  }
+  
+  .movie-list-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .movie-item {
+    width: 400px; /* ขนาดกล่องรวม padding และ border */
+    min-height: 250px; /* ความสูงขั้นต่ำ */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: -1px 3px 22px -6px rgba(51,41,41,0.35);
+    -webkit-box-shadow: -1px 3px 22px -6px rgba(51,41,41,0.35);
+    -moz-box-shadow: -1px 3px 22px -6px rgba(51,41,41,0.35);
+    border-radius: 8px;
+    padding: 15px; /* ระยะห่างภายในรวมอยู่ใน 400px */
+    margin: 10px auto;
+    overflow: hidden;
+  }
+  
+  .movie-image {
+    width: 90px; /* ลดขนาดลงให้สมดุลกับ padding */
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0; /* ป้องกันการหดตัว */
+    margin-right: 15px;
+  }
+  
+  .movie-details {
+    flex-grow: 1;
+    overflow-wrap: break-word;
+    text-align: left;
+  }
+  
+  .movie-title {
+    text-align: left;
+    font-size: 16px; /* ลดขนาดตัวอักษรเพื่อให้สมดุล */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .genre-badge {
+    display: inline-block;
+    background-color: #eaac9a;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #070606;
+  }
+  
+  .movie-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
